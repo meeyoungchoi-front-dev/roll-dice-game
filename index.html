@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll-Dice-Game</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+    <main>
+        <div class="container-left">
+            <div class="game-top">
+                <h1>PLAYER 1</h1>
+                <h2 id="player1-real-score">0</h2>
+            </div>
+            <div class="game-bottom">  
+                <h3>CURRENT</h3>
+                <span id="player1-current-score">0</span>
+            </div>
+        </div>
+        <div class="container-center">
+            <div class="center-top">
+                <button>NEW GAME</button>
+            </div>
+            <div class="dice">
+                <h2>2</h2>
+            </div>
+            <div class="dice-buttons">
+                <button id="roll-dice">ROLL DICE</button>
+                <button id="hold">HOLD</button>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="game-top">
+                <h1>PLAYER 2</h1>
+                <h2 id="player2-real-score">0</h2>
+            </div>
+            <div class="game-bottom">
+                <h3>CURRENT</h3>
+                <span id="player2-current-score">0</span>                
+            </div>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
