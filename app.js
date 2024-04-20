@@ -72,7 +72,7 @@ holdDiceButton.addEventListener('click', (event) => {
         player1CurrentScore = 0;
         playerOneCurrentScoreSelector.innerHTML = player1CurrentScore;
 
-        if (playerOneRealScoreTemp == 50) {
+        if (playerOneRealScoreTemp >= 50) {
             alert("player1 승리");
             resetNewGame();
         }
@@ -87,7 +87,7 @@ holdDiceButton.addEventListener('click', (event) => {
         player2CurrentScore = 0;
         playerTwoCurrentScoreSelector.innerHTML = player2CurrentScore;
         
-        if (playerTwoRealScoreTemp == 50) {
+        if (playerTwoRealScoreTemp >= 50) {
             alert("player2 승리");
             resetNewGame();
         }
