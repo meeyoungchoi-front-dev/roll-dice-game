@@ -95,3 +95,16 @@ holdDiceButton.addEventListener('click', (event) => {
         turnFlag = 1;
     } 
 });
+
+newGameButton.addEventListener("click", (event) => {
+    alert("게임을 다시 시작합니다."); 
+    resetNewGame();
+})
+
+function resetNewGame() {
+    playerOneCurrentScoreSelector.innerHTML = 0;
+    playerTwoCurrentScoreSelector.innerHTML = 0;
+    playerOneRealScoreSelector.innerHTML = 0;
+    playerTwoRealScoreSelector.innerHTML = 0;
+    diceNumberSelector.innerHTML = 0;
+}
